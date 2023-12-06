@@ -4,7 +4,6 @@ vendor
 log
 trpc_go.yaml
 polaris
-main
 trpc.log*
 .codecc
 
