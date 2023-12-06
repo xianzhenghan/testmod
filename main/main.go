@@ -2,45 +2,28 @@ package main
 
 import (
 	"fmt"
-	_ "github.com/go-sql-driver/mysql"
-	"github.com/jmoiron/sqlx"
+	"reflect"
 )
 
-type Person struct {
-	UserId   int    `db:"user_id"`
-	Username string `db:"username"`
-	Sex      string `db:"sex"`
-	Email    string `db:"email"`
+// 定义结构体
+type User struct {
+	Id   int
+	Name string
+	Age  int
 }
 
-type Place struct {
-	Country string `db:"country"`
-	City    string `db:"city"`
-	TelCode int    `db:"telcode"`
-}
-
-var Db *sqlx.DB
-
-func init() {
-	database, err := sqlx.Open("mysql", "root:123456@tcp(127.0.0.1:3306)/test")
-	if err != nil {
-		fmt.Println("open mysql failed,", err)
-		return
-	}
-	Db = database
+func (u User) Hello(name string) {
+	fmt.Println("Hello：", name)
 }
 
 func main() {
-	r, err := Db.Exec("insert into person(username, sex, email)values(?, ?, ?)", "stu001", "man", "stu01@qq.com")
-	if err != nil {
-		fmt.Println("exec failed, ", err)
-		return
-	}
-	id, err := r.LastInsertId()
-	if err != nil {
-		fmt.Println("exec failed, ", err)
-		return
-	}
-
-	fmt.Println("insert succ:", id)
+	u := User{1, "5lmh.com", 20}
+	v := reflect.ValueOf(u)
+	// 获取方法
+	m := v.MethodByName("Hello")
+	// 构建一些参数
+	args := []reflect.Value{reflect.ValueOf("6666")}
+	// 没参数的情况下：var args2 []reflect.Value
+	// 调用方法，需要传入方法的参数
+	m.Call(args)
 }
