@@ -1,0 +1,18 @@
+2023-12-11T16:20:51.905+0800	ERROR	Error fetching URL www.5lmh.com : Error = Get "www.5lmh.com": unsupported protocol scheme ""
+2023-12-11T16:20:58.029+0800	INFO	Success! statusCode = 200 OK for URL http://www.google.com
+2023-12-11T16:23:13.541+0800	DEBUG	main/main.go:48	Trying to hit GET request for www.topgoer.com
+2023-12-11T16:23:13.542+0800	ERROR	main/main.go:51	Error fetching URL www.topgoer.com : Error = Get "www.topgoer.com": unsupported protocol scheme ""
+2023-12-11T16:23:13.543+0800	DEBUG	main/main.go:48	Trying to hit GET request for http://www.topgoer.com
+2023-12-11T16:23:14.621+0800	INFO	main/main.go:53	Success! statusCode = 200 OK for URL http://www.topgoer.com
+2023-12-11T16:23:53.866+0800	DEBUG	main/main.go:48	Trying to hit GET request for www.topgoer.com
+2023-12-11T16:23:53.866+0800	ERROR	main/main.go:51	Error fetching URL www.topgoer.com : Error = Get "www.topgoer.com": unsupported protocol scheme ""
+2023-12-11T16:23:53.866+0800	DEBUG	main/main.go:48	Trying to hit GET request for http://www.topgoer.com
+2023-12-11T16:23:54.103+0800	INFO	main/main.go:53	Success! statusCode = 200 OK for URL http://www.topgoer.com
+2023-12-11T16:24:06.880+0800	DEBUG	main/main.go:48	Trying to hit GET request for www.topgoer.com
+2023-12-11T16:24:06.881+0800	ERROR	main/main.go:51	Error fetching URL www.topgoer.com : Error = Get "www.topgoer.com": unsupported protocol scheme ""
+2023-12-11T16:24:06.881+0800	DEBUG	main/main.go:48	Trying to hit GET request for http://www.topgoer.com
+2023-12-11T16:24:12.435+0800	INFO	main/main.go:53	Success! statusCode = 200 OK for URL http://www.topgoer.com
+2023-12-11T16:24:13.470+0800	DEBUG	main/main.go:48	Trying to hit GET request for www.topgoer.com
+2023-12-11T16:24:13.470+0800	ERROR	main/main.go:51	Error fetching URL www.topgoer.com : Error = Get "www.topgoer.com": unsupported protocol scheme ""
+2023-12-11T16:24:13.470+0800	DEBUG	main/main.go:48	Trying to hit GET request for http://www.topgoer.com
+2023-12-11T16:24:13.538+0800	INFO	main/main.go:53	Success! statusCode = 200 OK for URL http://www.topgoer.com
